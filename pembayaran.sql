@@ -1,0 +1,1 @@
+select * from apotek.nama_obat
