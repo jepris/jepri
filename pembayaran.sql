@@ -1,1 +1,1 @@
-select * from apotek.nama_obat
+select * from ID natural join enrotlment
