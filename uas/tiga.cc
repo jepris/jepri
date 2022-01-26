@@ -9,8 +9,8 @@ void insert()
 {
     string getdata;
     ofstream txt;
-    txt.open("soalgenap.txt", ios::app);
-    cout << "masukkan data anda: ";
+    txt.open("lat.txt", ios::app);
+    cout << "enter name data: ";
     cin >> getdata;
     txt << getdata;
     txt << "\n";
@@ -18,7 +18,7 @@ void insert()
 }
 void view(){
     string getdata;
-    ifstream txt ("soalgenap.txt");
+    ifstream txt ("lat.txt");
     if(txt.is_open())
     {
         while(! txt.eof())
@@ -31,21 +31,21 @@ void view(){
 int main(){
     do{
         cout<<"MENU";
-        cout<<"\n 0. Create";
-        cout<<"\n 1. Read ";
-        cout<<"\n 2. Exit ";
+        cout<<"\n 0. Exit";
+        cout<<"\n 1. Create ";
+        cout<<"\n 2. Read ";
         cout<<"\nPilih : "; cin>>pilih;
 switch(pilih){
             case 0:
-               insert();
-               break;
-            case 1:
-				cout << "list data\n";
-                view();
-                break;
-            case 2:
                 cout<<"\nThanks"<<endl;
                 return 0;
+            case 1:
+				insert();
+                break;
+            case 2:
+                cout << "LIST DATA\n";
+				view();
+                break;
             default:
                 cout<<"Pilihan Salah"<<endl;
                 break;
