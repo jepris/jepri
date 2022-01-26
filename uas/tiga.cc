@@ -9,7 +9,7 @@ void insert()
 {
     string getdata;
     ofstream txt;
-    txt.open("lat.txt", ios::app);
+    txt.open("soalgenap.txt", ios::app);
     cout << "enter name data: ";
     cin >> getdata;
     txt << getdata;
@@ -18,7 +18,7 @@ void insert()
 }
 void view(){
     string getdata;
-    ifstream txt ("lat.txt");
+    ifstream txt ("soalgenap.txt");
     if(txt.is_open())
     {
         while(! txt.eof())
