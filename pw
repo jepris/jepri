@@ -1,0 +1,28 @@
+Nama		: JEPRI HALOMOAN SIMBOLON
+NIM		: 20200801382
+Mata Kuliah	: Pemograman Web
+
+1. JavaScript adalah bahasa skrip klien yang digunakan untuk membuat halaman web. Ini adalah bahasa mandiri yang dikembangkan di Netscape. JavaScript digunakan ketika halaman web dibuat dinamis dan menambahkan efek khusus pada halaman seperti rollover, roll out dan banyak jenis grafik. Fungsi Javascript kira-kira meliputi pembuatan aplikasi mobile, desktop, web, game, sampai membuat slide presentasi. Meskipun fungsi Javascript cukup banyak, biasanya bahasa pemrograman ini digunakan untuk aplikasi web. Hal ini karena website bisa terlihat lebih menarik dengan Javascript.
+2. kelebihan :
+•	Tidak membutuhkan resource memory besar (ringan dan kecil)
+•	Mudah untuk dipelajari
+•	Dinamis
+•	Multi platform
+•	Mudah untuk dikembangkan
+Kekurangan :
+•	Script yang digunakan pada javascript tidak terenkripsi
+•	Bukan untuk pengembangan aplikasi stand alone
+•	Memiliki keterbatasan objek
+3. perbedaannya ada pada sistem kompilasi, aplikasi dan platform implementasi, class, syntax, closures, kemudahan, dukungan perangkat, html
+4. function segitiga1(panjang) {
+    let hasil = '';
+    for (let i = 0; i < panjang; i++) {
+        for (let j = 0; j <= i; j++) {
+            hasil += '* ';
+        }
+        hasil += '\n';
+    }
+    return hasil;
+}
+console.log(segitiga1(5));
+
