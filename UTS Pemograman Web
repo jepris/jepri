@@ -1,0 +1,134 @@
+1. baris 10,11,15,16,17. dengan melihat tag dapat dikatakan bahwa script itu menggunakan css yang berjeniskan internal style sheet dan eksternal style sheet
+
+2. css berfungsi untuk mempercantik dan memberikan detail lebih pada script, mulai dari ukuran huruf, warna, style, dan juga dapat mengambil dari file lain menggunakan link.
+
+perbedaan : inline - penulisan css dapat dilakukan langsung pada html. internal - penulisan css dilakukan di dalam file html. eksternal - penulisan css dapat dilakukan diluar html dengan memberikan ekstensi .css.
+
+contoh : 
+
+inline -
+
+<html>
+    <head>
+    <title>Internal </title>
+    </head>
+<body style="font-family: 'Times New Roman'">
+    <h1 style="background-color: cyan; color: black; padding: 5px">Internal Style Sheet.</h1>
+</body>
+</html>
+
+internal -
+<html>
+
+<head>
+    <meta charset="UTF-9">
+    <title>Internal</title>
+    <style type="text/css">
+        body {
+            font-family: 'Times New Roman';
+        }
+       
+        h1 {
+            background-color: blue;
+            color: black;
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>UTS Pemograman Web Internal Style Sheet</h1>
+</body>
+
+</html>
+
+eksternal -
+<html>
+
+<head>
+    <title>Contoh Eksternal CSS</title>
+    <link rel="stylesheet" type="text/css" href="uts-web.css">
+</head>
+
+<body>
+    <h2>Contoh Eksternal</h2>
+    <p>Beginilah kira - kira contoh script dari <i>Eksternal style sheet</i>.</p>
+</body>
+
+</html>
+
+3. 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>kotak</title>
+    <style type="text/css">
+        .kotak {
+            border-style: solid;
+            width: 300px;
+            height: 250px;
+            padding-top: 50px;
+            padding-bottom: 35px;
+            padding-left: 100px;
+        }
+       
+        .biru {
+            background: blue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Ini Kotak Biru">
+    </div>
+
+</body>
+
+</html>
+
+4. javascript merupakan bahasa pemograman yang paling populer saat ini. proyek yang dapat dikerjakan oleh javascript juga lebih luas dan beragam, produk yang dikembangkan lebih responsif dengan fitur dan fungsi terbaik
+<html>
+<SCRIPT LANGUAGE="JavaScript">
+    !--Begin >
+        function Login() {
+            var done = 0;
+            var username = document.login.username.value;
+            username = username.toLowerCase();
+            var password = document.login.password.value;
+            password = password.toLowerCase();
+            if (username == "20200801382" && password == "simbolon") {
+                alert("Selamat datang di website kami ");
+            } else
+            if (done == 0) {
+                alert("username atau password Anda salah !");
+            }
+        }
+        // End -->
+</SCRIPT>
+
+<BODY>
+    <center>
+        <form name=login>
+            <table width=225 border=1 cellpadding=3>
+                <tr>
+                    <td colspan=2>
+                        <center>
+                            <font size="+2"><b>Members-Only Area!</b></font<</center< </td>
+                </tr>
+                <tr<<td>Username:</td>
+                    <td><input type=text name=username></td>
+                    </tr>
+                    <tr<<td>Password:</td>
+                        <td><input type=text name=password></td>
+                        </tr>
+                        <tr<>
+                            <td colspan=2 align=center><input type=button value="Login!" onClick="Login()" <</td<</tr>
+            </table>
+</body>
+
+</html>
